@@ -1,0 +1,245 @@
+div #contenitore
+{
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: rgb(211, 212, 212);
+}
+
+div #header
+{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    float: left;
+}
+
+div #colonsx
+{
+    width: 50%;
+    height: auto;
+    float: left;
+    text-align: center;
+}
+
+div #colondx
+{
+    width: 50%;
+    height: auto;
+    float: left;
+    text-align: center;
+}
+
+.text_titolo
+{
+    text-align: center;
+    color: black;
+    margin-top: 75px;
+}
+
+.sfondo1
+{
+    width: 100%;
+    height: 300px;
+    position:absolute;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5),rgba(0,0,0,0.2)), url(../Immagini/head/Foto_1.jpg);
+    background-size:cover;
+    background-position: center;
+    animation:fade1 15s infinite;
+}
+
+.sfondo2
+{
+    width: 100%;
+    height: 300px;
+    position:absolute;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5),rgba(0,0,0,0.2)), url(../Immagini/head/Foto_2.jpg);
+    background-size: cover;
+    background-position: center;
+    animation:fade2 15s infinite;
+}
+
+@keyframes fade1
+{
+    0%
+    {
+        opacity: 1
+    }
+    50%
+    {
+        opacity: 0
+    }
+    100%
+    {
+        opacity: 1
+    }
+}
+
+@keyframes fade2
+{
+    0%
+    {
+        opacity: 0
+    }
+    50%
+    {
+        opacity: 1
+    }
+    100%
+    {
+        opacity: 0
+    }
+}
+
+.text_titolo
+{
+    font-size: 50pt;
+    color: #32ccff;
+}
+
+.menù
+{
+    width: auto;
+    height:auto;
+    float: left;
+}
+
+ul
+{
+    list-style-type: none;
+    overflow: hidden;
+    background-color:rgb(59, 60, 61);
+    justify-content: center;
+    margin: 0;
+}
+
+li
+{
+    float: left;
+}
+
+li a
+{
+    display: block;
+    color: white;
+    font-size:15pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    text-align: center;
+    padding: 25px 20px;
+    text-decoration:none;
+    transition: 1s;
+}
+
+li a:hover
+{
+    background-color: rgb(4, 133, 0, 0.801);
+}
+
+.immagine
+{
+    width: 550px;
+    height: 300px;
+    display:block;
+    border-radius: 20px;
+    transform: scale(0.9);
+    transition: 1s;
+}
+.immagine:hover
+{
+    transform: scale(1.0);
+}
+
+.descrizione_img
+{
+    text-align: center;
+    margin-top: -3px;
+    margin-bottom: 10px;
+    font-size: 15pt;
+}
+
+div #footer
+{
+    width: 100%;
+    height: auto;
+}
+
+div #footer_img
+{
+    width: 50%;
+    height: 120px;
+    background-color: rgb(59, 60, 61);
+    float: left;
+    text-align: center;
+}
+
+div #footer_text
+{
+    width: 50%;
+    height: 120px;
+    background-color:rgb(59, 60, 61);
+    float: left;
+    text-align: center;
+}
+
+.img_footer
+{
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.img_footer:hover
+{
+    transform: scale(1.0);
+}
+
+.text_footer
+{
+    margin-top: 10px;
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px)
+{
+    div #colonsx
+    {
+        width: 100%;
+        height: auto;
+        float: left;
+        text-align: center;
+    }
+    
+    div #colondx
+    {
+        width: 100%;
+        height: auto;
+        float: left;
+        text-align: center;
+    }
+
+    .immagine
+    {
+        width: 450px;
+        height: 250px;
+        display:block;
+        border-radius: 20px;
+        transform: scale(0.9);
+        transition: 1s;
+    }
+
+    .img_footer:hover
+    {
+        transform: scale(1.0);
+    }
+}
